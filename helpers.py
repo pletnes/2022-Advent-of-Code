@@ -2,8 +2,11 @@ import pathlib
 import traceback
 from pprint import pprint as pp
 
+from rich.traceback import install
+install()
 
-def inp():
+
+def inp(suffix=''):
     """
     Most / all AoC tasks can read the inputs from one text file.
     This function finds the input based on the python code filename in the
@@ -15,7 +18,7 @@ def inp():
     fname = pathlib.Path(prev_frame.filename).stem
     code_file = pathlib.Path(fname)
     here = code_file.parent
-    inputfile = here / "input" / f"{code_file.stem}.txt"
+    inputfile = here / "input" / f"{code_file.stem}{suffix}.txt"
 
     print(f"AoC solution for {code_file.stem}")
     return list(map(str.strip, inputfile.open("r").readlines()))
