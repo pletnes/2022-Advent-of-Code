@@ -3,10 +3,11 @@ import traceback
 from pprint import pprint as pp
 
 from rich.traceback import install
+
 install()
 
 
-def inp(suffix=''):
+def inp(suffix=""):
     """
     Most / all AoC tasks can read the inputs from one text file.
     This function finds the input based on the python code filename in the

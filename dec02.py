@@ -30,7 +30,6 @@ choice = dict(
 )
 
 total = 0
-total_p2 = 0
 for line in lines:
     other, mine = line.split()
     score = shapescore[mine] + pointscore[mine][other]

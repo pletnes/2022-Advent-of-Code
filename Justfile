@@ -1,5 +1,5 @@
 lint:
-    black *.py
+    black dec[0-2][0-9].py
 
 today:
     #!/usr/bin/env zsh
