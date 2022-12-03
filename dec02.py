@@ -1,7 +1,7 @@
 import sys
 from helpers import p, inp
 
-lines = inp(__file__)
+lines = inp()
 
 # Rock      A   X
 # Paper     B   Y

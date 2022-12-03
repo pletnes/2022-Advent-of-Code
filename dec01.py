@@ -1,6 +1,6 @@
 from helpers import inp
 
-lines = inp(__file__)
+lines = inp()
 
 groups = list(
     map(lambda gs: sum(map(int, str.split(gs))), "\n".join(lines).split("\n\n"))

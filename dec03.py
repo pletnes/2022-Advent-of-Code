@@ -5,7 +5,7 @@ from helpers import p, pp, inp
 prio = dict(zip(string.ascii_letters, range(1, 123456789)))
 
 total = 0
-for line in inp(__file__):
+for line in inp():
     half = len(line) // 2
     left, right = line[:half], line[-half:]
 
